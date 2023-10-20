@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_pomodoro_app/screens/home_screen.dart';
 
 void main() {
   runApp(const App());
@@ -20,18 +21,7 @@ class App extends StatelessWidget {
         colorScheme:
             ColorScheme.fromSwatch(backgroundColor: const Color(0xFFE7626C)),
       ),
-      home: const Scaffold(
-        body: Center(
-          child: Text(
-            'Test',
-            style: TextStyle(
-              color: Colors.amber,
-              fontSize: 90,
-              fontWeight: FontWeight.w900,
-            ),
-          ),
-        ),
-      ),
+      home: const HomeScreen(),
     );
   }
 }
